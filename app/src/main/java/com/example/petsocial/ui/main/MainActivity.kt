@@ -16,8 +16,9 @@ import com.example.petsocial.ui.Fotos.GaleriaImagen
 import com.example.petsocial.ui.profile.ProfileFragment
 import com.google.android.material.appbar.MaterialToolbar
 import java.io.InputStream
-import com.example.petsocial.ui.video.WebVideo
 import com.example.petsocial.ui.post.PostFragment
+import com.example.petsocial.ui.videoimagen.VideoFragment
+import com.example.petsocial.ui.web.WebFragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -48,8 +49,8 @@ class MainActivity : AppCompatActivity() {
     private val items = listOf(
         MenuItemM("Perfil", "icons/perfil.png", "👤") { ProfileFragment()  },
         MenuItemM("Fotos",  "icons/fotos.png",  "🖼️") { GaleriaImagen() },
-        MenuItemM("Videos", "icons/videos.png", "▶️") { WebVideo() },
-        MenuItemM("Web",    "icons/web.png",    "🌐") { Placeholder("Web (placeholder)") },
+        MenuItemM("Videos", "icons/videos.png", "▶️") { VideoFragment() },
+        MenuItemM("Web",    "icons/web.png",    "🌐") { WebFragment() },
         MenuItemM("Muro",  "icons/subir.png",  "⬆️") { PostFragment() }
     )
 
